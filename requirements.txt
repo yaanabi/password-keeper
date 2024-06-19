@@ -1,0 +1,11 @@
+asgiref==3.8.1
+cffi==1.16.0
+confusable-homoglyphs==3.3.1
+crispy-bootstrap5==2024.2
+cryptography==42.0.8
+Django==5.0.6
+django-crispy-forms==2.1
+pycparser==2.22
+python-dotenv==1.0.1
+sqlparse==0.5.0
+tzdata==2024.1

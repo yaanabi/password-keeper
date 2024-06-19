@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if messages %}
+    {% for message in messages %}
+      {% if 'error' in message.tags %}
+        <div class="alert alert-danger" role="alert">{{ message }}</div>
+      {% else %}
+        <div class="alert alert-success" role="alert">{{ message }}</div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <h1>Password Keeper</h1>
+      <p class="lead">Securely store and manage your online credentials</p>
+      <hr class="my-4" />
+      <p class="text-muted">With features like:</p>
+      <ul class="list-group">
+        <li class="list-group-item">Password Vault</li>
+        <li class="list-group-item">Credential Name and URL Storage</li>
+        <li class="list-group-item">Email or Login Credential Storage</li>
+        <li class="list-group-item">Show credential password secured way</li>
+        <li class="list-group-item">Edit or Delete Credentials as needed</li>
+        <li class="list-group-item">Easy profile editing</li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <h3 class="card-header">User Profile</h3>
+          {% if form %}
+            <form method="POST" action="{% url 'edit_profile' request.user.pk %}">
+              {% csrf_token %}
+              <div class="card-body">
+                <p>
+                  <strong>{{ form.username|as_crispy_field }}</strong>
+                </p>
+                <p>
+                  <strong>{{ form.first_name|as_crispy_field }}</strong>
+                </p>
+                <p>
+                  <strong>{{ form.last_name|as_crispy_field }}</strong>
+                </p>
+                <p>
+                  <strong>{{ form.email|as_crispy_field }}</strong>
+                </p>
+                <p>
+                  Date joined: <strong>{{ user.date_joined }}</strong>
+                </p>
+              </div>
+              <div class="card-footer">
+                <button type="submit" class="btn btn-success">Save changes</button>
+                <button type="button" class="btn btn-danger mx-3" onclick="window.location.href='{% url 'profile' request.user.pk %}'">Cancel</button>
+              </div>
+            </form>
+          {% else %}
+            <div class="card-body">
+              <p class="py-2">
+                Username: <strong>{{ user.username }}</strong>
+              </p>
+              <p class="py-2">
+                First name: <strong>{{ user.first_name|default:'Empty' }}</strong>
+              </p>
+              <p class="py-2">
+                Last name: <strong>{{ user.last_name|default:'Empty' }}</strong>
+              </p>
+              <p class="py-2">
+                Email: <strong>{{ user.email }}</strong>
+              </p>
+              <p class="py-2">
+                Date joined: <strong>{{ user.date_joined }}</strong>
+              </p>
+            </div>
+            <div class="card-footer">
+              {% if request.user.pk == user.pk %}
+                <a href="{% url 'edit_profile' user.pk %}" class="btn btn-info">Edit</a>
+                <a href="{% url 'password_change' %}" class="btn btn-success mx-3">Change password</a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
