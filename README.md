@@ -8,5 +8,6 @@ Password manager website, that stores your credentials in a secure encrypted way
 ![image](https://github.com/yaanabi/password-keeper/assets/59331813/57a65df4-e331-4b42-b49e-1abadd4e0622)
 ![image](https://github.com/yaanabi/password-keeper/assets/59331813/be9f9f27-d7f1-4271-b686-36dd8a5909cd)
 ![image](https://github.com/yaanabi/password-keeper/assets/59331813/d1c7c0ec-aef9-4d05-b7db-b6bd34c00aee)
-
+![image](https://github.com/yaanabi/password-keeper/assets/59331813/9207cb5e-02d3-4e80-a924-2e10ca2f1f06)
+![image](https://github.com/yaanabi/password-keeper/assets/59331813/bb6c97be-352a-43da-bf25-be17d74919be)
 
