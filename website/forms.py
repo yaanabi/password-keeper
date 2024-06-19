@@ -67,14 +67,14 @@ class AddCredentialForm(forms.ModelForm):
             'credential_url',
             'credential_login',
             AppendedText('credential_password', mark_safe(
-                '<i class="fas fa-eye fa-eye-slash" id="togglePassword" style="cursor: pointer;"></i>')),
+                '<i class="fa-solid fa-eye-slash" id="togglePassword" style="cursor: pointer;"></i>')),
             self.helper.add_input(Submit('submit', 'Add credential'))    
         )
         self.edit_helper = FormHelper()
         self.edit_helper.form_tag = False 
         self.edit_helper.layout = Layout(
             AppendedText('credential_password', mark_safe(
-                '<i class="fas fa-eye fa-eye-slash" id="togglePassword" style="cursor: pointer;"></i>')),
+                '<i class="fa-solid fa-eye-slash" id="togglePassword" style="cursor: pointer;"></i>')),
 
         )
 
