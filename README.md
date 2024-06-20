@@ -1,5 +1,12 @@
 # password-keeper
 Password manager website, that stores your credentials in a secure encrypted way  
+1)Do pip install -r requirements.txt
+2)Generate fernet key using "from cryptography.fernet import Fernet" in python shell
+3)create .env file and insert everything from env-template
+4) Replace SECRET_KEY and ENCRYPTION_KEY with your keys 
+
+
+Website screenshots:
 ![image](https://github.com/yaanabi/password-keeper/assets/59331813/27d03c68-5407-44bf-ad09-4ce26882e13a)
 ![image](https://github.com/yaanabi/password-keeper/assets/59331813/c885803f-a01c-4c1c-8250-28104b53f2f8)
 ![image](https://github.com/yaanabi/password-keeper/assets/59331813/72c58391-3353-402d-8036-19cd88ec6e8d)
