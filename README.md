@@ -7,7 +7,7 @@ Password manager website, that stores your credentials in a secure encrypted way
 
 3)Create .env file and insert everything from env-template 
 
-4)Replace SECRET_KEY and ENCRYPTION_KEY with your keys 
+4)Replace SECRET_KEY and ENCRYPTION_KEY with your values
 
 
 
