@@ -1,9 +1,14 @@
 # password-keeper
 Password manager website, that stores your credentials in a secure encrypted way  
+
 1)Do pip install -r requirements.txt
-2)Generate fernet key using "from cryptography.fernet import Fernet" in python shell
-3)create .env file and insert everything from env-template
-4) Replace SECRET_KEY and ENCRYPTION_KEY with your keys 
+
+2)Generate fernet key using "from cryptography.fernet import Fernet" in python shell 
+
+3)Create .env file and insert everything from env-template 
+
+4)Replace SECRET_KEY and ENCRYPTION_KEY with your keys 
+
 
 
 Website screenshots:
