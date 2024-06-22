@@ -1,2 +1,0 @@
-SECRET_KEY = 'django secret key'
-ENCRYPTION_KEY = b'fernet key'

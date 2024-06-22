@@ -37,8 +37,8 @@ ALLOWED_HOSTS = []
 
 EMAIL_USE_TLS = True  
 EMAIL_HOST = 'smtp.gmail.com'  
-EMAIL_HOST_USER = 'nabi.usonov@gmail.com'  
-EMAIL_HOST_PASSWORD = 'psox zfpq vseb upun'  
+EMAIL_HOST_USER = os.environ('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587  
 
 INSTALLED_APPS = [
