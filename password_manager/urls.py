@@ -21,5 +21,6 @@ urlpatterns = [
     path('', include('website.urls')),
     path('accounts/login/', views.MyLoginView.as_view()),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('api', include('rest_framework.urls'))
 
 ]
